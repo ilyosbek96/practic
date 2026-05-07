@@ -31,3 +31,7 @@ git pull origin master
 ## PYTHONda xammanarsa OBJECT bo'ladi
 
 ## pythonning ishlashi DUNDER VERIABLE yoki MAXSUS METHODlarga asoslanadi
+
+# PROPERTY
+
+- method() xamda state

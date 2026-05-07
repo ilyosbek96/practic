@@ -27,3 +27,7 @@ git pull origin master
 - Operation & Conditions
 - Loops
 - ....
+
+## PYTHONda xammanarsa OBJECT bo'ladi
+
+## pythonning ishlashi DUNDER VERIABLE yoki MAXSUS METHODlarga asoslanadi

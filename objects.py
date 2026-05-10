@@ -31,3 +31,17 @@ print("natija", natija)
 
 natija1 = ceil(98.7)
 print("natija1", natija1)
+
+
+print("===== ERROR handling system =====")
+car_dict = dict(name="Tayota", year=2026, electric=True)
+try:
+    print("bu yerdan o'tdi")
+    natija2 = car_dict["origin"]
+    print("natija2:", natija2)
+except KeyError as err:
+    print("no origin state property found:", err)
+else:
+    print("executed successfully without errors")
+finally:
+    print("oxrida ishga tushadi")

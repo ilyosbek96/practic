@@ -26,7 +26,7 @@ class Person():
         print(f"{self.name} says i am {self.age}")
 
     # static method @classmethod > orqalik ishlatiladi
-    @classmethod
+    @classmethod  # diqared xisoblanadi
     def explain(cls):
         print("static method property executed")
 

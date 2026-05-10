@@ -9,7 +9,7 @@ import array  # package/module
 # bironbir packageni yaxlit object qilib chaqirmoqchi bo'lganda (import deb package nomi yoziladi)
 import math   # package
 # from orqalikxam chaqirib olish mumkun
-# ceil methodini qo'lga olish o'li
+# anq bir state yoki method chaqirilayotganda esa from orqalik math (package) ceil (methodini) qo'lga olish o'li
 from math import ceil
 print("===== what is object =====")
 # OBJECT o'zining state va methodiga ega bo'lgan maxsus data type

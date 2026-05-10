@@ -37,10 +37,12 @@ print("===== ERROR handling system =====")
 car_dict = dict(name="Tayota", year=2026, electric=True)
 try:
     print("bu yerdan o'tdi")
+    # a = car_dict.speed
     natija2 = car_dict["origin"]
     print("natija2:", natija2)
-except KeyError as err:
-    print("no origin state property found:", err)
+except (KeyError, AttributeError) as err:  # (Exception) xamma xatoliklarni ko'rsatadi
+    print("Error:", err)
+
 else:
     print("executed successfully without errors")
 finally:

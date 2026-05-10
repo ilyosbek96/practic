@@ -1,6 +1,6 @@
 '''OBJECTS 
 (1) WHAT is object
-(2) Interable objects & RANGE 
+(2) Iterable objects & RANGE 
 (3) DICTIONARY
 (4) ERROR handling system
 '''

@@ -15,7 +15,7 @@ class Person():
     # constructor
 
     def __init__(self, name, age):  # self bu object (init > maxsus methhod)
-        self.name = name
+        self.name = name  # self => this degani
         self.age = age
 
     # method oddiy

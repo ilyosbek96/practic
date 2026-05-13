@@ -1,7 +1,7 @@
 ''' CLASS deep diving
     (1) ENCAPSULATION
     (2) INHERITENCE <
-    (3) POLOMORPHISM <
+    (3) POLiMORPHISM <
 
 '''
 
@@ -38,6 +38,10 @@ class Dog(Animal):  # CHILD
 
     def protect(self):
         print("yes, i can protect you!")
+
+    # polomorphism methodning turli xil shakli bolyapti
+    def make_voice(self):
+        print(f"the {self.name} says: {self.sound}")
 
 
 class Cat(Animal):  # CHILD
@@ -90,3 +94,24 @@ fish.make_voice()
 print(dog.voice, fish.voice)
 print("dog.status;", dog.status)
 print("cat.status;", cat.status)
+print("======== POLIMORPHISM ========")
+# POLOMORPHISM > bir narsaning bir necha sakilga ega bo'lishi degani yoki( ko'p turda yozilishi)
+
+dog.make_voice()
+fish.make_voice()
+
+print("========")
+# fish > Fish fish classidan paydo bo'lgan object xisoblanadi
+# Fish esa > Animal classdan paaydo po'lgan CHILD xisoblanadi
+# ikkalasi esa > OBJECT xisoblanadi
+print("====================== MISOL ====================")
+a = isinstance(fish, Fish)  # fish object Fish classni isinstance(timi)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+javob = a and b and c
+print(f"javob:, {javob}")
+
+# Fish > Animal > OBJECT
+data = issubclass(Fish, Animal)
+data1 = issubclass(Animal, object)
+print("data:", data, data1)

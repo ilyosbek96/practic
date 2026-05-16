@@ -11,7 +11,7 @@ print("=====================  (1) Working with lists ===========================
 
 # (1) literal
 # [dictionary] li literal usulda tash qilish
-person = {"name": "JACK", "age": 25}
+person = {"name": "JACK", "age": 25}  # dictionar
 people = ("Andrew", "John", "Leo")  # [tuple] literal usulda tash qilish
 groups = ["MIT", "FLEX", "DEVEX", "MG"]  # literal uslubida list tash qilish
 for team in groups:  # for orqali qolga olamiz
@@ -25,7 +25,7 @@ print(f"the result: {result} and size: {len(result)}")
 print("-------")
 fruits = ["apple", "orange", "lemon", "kiwi"]
 a = fruits[0]
-b = fruits[0:2]  # [0, 2] 2 kirmaydi
+b = fruits[0:2]  # [0, 2] 2 kirmaydi yarm interval yani [0,1 kiradi degani)
 c = fruits[::3]  # 3 qadam sakraydi
 d = fruits[::-1]  # teskari holat
 
@@ -91,3 +91,28 @@ print("--- Immutable sorted index() --")
 numbs = [2, 20, 12, 100]
 new_numbs = sorted(numbs)  # bunda yangi new_numbs ozgargan
 print(f" the sorted numbs: {numbs} and new_numbs: {new_numbs}")
+
+print("====== Lambda Function ======")
+# lambdamiz bu qichik anonymous function
+
+# function tuzvolamiz
+
+# eng sodda lambda functioni
+
+
+def calculate(x, y): return x * y
+
+
+natija = calculate(5, 10)
+print("natija:", natija)
+
+# listimiz mavjun uni ichid ismlar
+people = [
+    ("Robert", 20),
+    ("Steve", 19),
+    ("Joseph", 25),
+    ("Michael", 30),
+]
+# sort qilish yani yoshiga nisbatan lambda orqalik
+people.sort(key=lambda person: person[1])
+print("people:", people)

@@ -7,6 +7,7 @@
 # arrayni ishlatmoqchi bo'lsak array nomlik packcageni ichiga kirib array contructorni qabul qilish kerak
 
 from array import array
+print("===== Array =====")
 # juda katta xajmdagi sonlar ketma ketligi bo'lsa arraydan foydalanadi kichik xajmda esa listdan
 # (i , f ) > intijer
 numbers = array("i", [1, 4, 5, 7, 8, 41])

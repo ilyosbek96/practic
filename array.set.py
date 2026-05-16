@@ -56,7 +56,8 @@ natija = a | b
 natija1 = a & b
 # (-)=> difference tafout degani ikkalla setdan ayrib jatijani chiqaradi
 natija2 = a - b
-natija3 = a ^ b  # (^)=> symetric difference
+# (^)=> symetric difference yani ikkala setda takririy bo'lmagan sonlarni chiqarib beradi
+natija3 = a ^ b
 print("natija:", natija)
 print("natija1:", natija1)
 print("natija2:", natija2)

@@ -2,7 +2,7 @@
     (1) Working with lists
     (2) List method
     (3)Lambda Function
-    (4) Enumarte, map and filter
+    (4) Enumerate, map and filter
 '''
 
 print("=====================  (1) Working with lists ================================")
@@ -116,3 +116,54 @@ people = [
 # sort qilish yani yoshiga nisbatan lambda orqalik
 people.sort(key=lambda person: person[1])
 print("people:", people)
+
+print("====== Enumerate, map and filter ======")
+# Enumerate > bir vaqtning o'zida value xamda indexsini olishda yordam beradi
+animals = ["dog", "cat", "fidh"]  # bu list
+for element in enumerate(animals):
+    print("element:", element)
+print("="*15)
+for (index, value) in enumerate(animals):
+    # listda esa index xamda value bo'ladi
+    print(f"the index: {index} and value: {value}")
+
+print("="*15)
+# siminal in dictionaries bu => (json object)
+car_obj = dict(brand="BMW", year=2026)  # dict
+# dictionariesni items methodinii xosil qilib arrayga key va valuelarni tuple qilib yoyib beradi
+natija = car_obj.items()
+print("natija:", natija)
+for (key, value) in natija:  # dictionaries objectda key value deyiladi (bo'ladi)
+    print(f"the key: {key} and value: {value}")
+
+
+print("="*15)
+# map
+cars = [
+    ("Ferari", 70),
+    ("Tayota", 87),  # bular xammasi tuple ko'rinishda
+    ("Audi", 116),
+    ("BMW", 109),
+    ("Pagani", 33)
+]
+
+# yangi array yaratamiz
+new_cars = []
+for car in cars:
+    new_cars.append(car[0])
+print("new_cars(1)", new_cars)
+
+# map objecti orqaalik lambdani xosil qilyapmiz
+# to'gridan to'g'ri ko'rib bo'lmaydi zip ko'rinishda bo'lib qoladi
+natija_map = map(lambda car: car[0], cars)
+print(f"the natija_map: {natija_map} and type: {type(natija_map)}")
+
+# natijani ko'rish uchun list ko'rinishiga olib o'tish kerak
+new_cars = list(natija_map)  # mapni listsga argument qilib beryapmiz
+print("new_cars(2)", new_cars)
+
+
+# fiter object
+natija_filter = filter(lambda car: car[1] > 80, cars)
+print(f"the natija_filter: {natija_filter} and type: {type(natija_filter)}")
+print(list(natija_filter))

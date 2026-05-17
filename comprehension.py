@@ -37,3 +37,23 @@ cars = [
 ]
 list_cars = [car[0] for car in cars if car[1] > 80]
 print("list_cars:", list_cars)
+
+print("======== set va dictionary comprehension  ========")
+# list yaratish
+numbs = [1, 5, 4, 20, 4, 5, 1, 4]
+# set orqalik chaqirib olsih yai set takroriy bo'lgan sonlarni 1donasini olib beradi
+# set objectni yaratamiz
+# {qavus ochiladi} va *number yoziladi bu itareble takrorlash va yoyib berish
+set_numbs = {*numbs}
+print("set_numbs:", set_numbs)
+
+print("===== b) expression > for item in iterable =====")
+# b) expression > for item in iterable
+dict_people = {person[0]: person[1] for person in people}
+print("dict_people:", dict_people)
+print("===== c) expression > for item in iterable <condition> =====")
+# c) expression > for item in iterable <condition>
+dict_people1 = {person[0]: person[1] for person in people if person[1] > 20}
+print("dict_people1:", dict_people1)
+
+#

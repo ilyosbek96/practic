@@ -12,10 +12,10 @@ print("===== PYTHON PACKAGE & CORE PACKAGE =====")
 # import orqalik ulanadi
 
 # Core
-# t = turtle.Turtle()
-# t.shape("turtle")
-# t.speed(1)
-# t.circle(100)
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(1)
+t.circle(100)
 
 # turtle.done()
 
@@ -52,3 +52,18 @@ with Image.open("material/logo.png") as img_obj:
 # pip3 list pipni listni ko'rsatadi
 # pip3 show pillow desa qayerga ornatilganini bilsih uchun
 # cd dep shu linkgborsak /Users/ilyosbek96/Library/Python/3.9/lib/python/site-packages qanday saqlanganini ko'rsa bo'ladi va ls dep ro'yxatni ko'rsa bo'ladi
+
+print("========== DEBUGGING ==========")
+# DEBUGGING oqali xatoni toposa bo'ladi
+
+
+def get_summary(*args):  # define qismi
+    total_amount = 0
+    for a in args:
+        total_amount += a
+        return total_amount
+
+
+test = 100
+natija = get_summary(1, 2, 3, 4, 5)  # call qismi
+print("natija:", natija)

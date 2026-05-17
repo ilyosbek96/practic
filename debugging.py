@@ -3,6 +3,7 @@
    (2) PACKAGE MANAGER & EXTERNAL PACKAGE
    (3) DEBUGGING
 '''
+from PIL import Image
 import turtle
 print("===== PYTHON PACKAGE & CORE PACKAGE =====")
 ''' Python Package/ Modulelari: Core, File, External  '''
@@ -11,12 +12,12 @@ print("===== PYTHON PACKAGE & CORE PACKAGE =====")
 # import orqalik ulanadi
 
 # Core
-t = turtle.Turtle()
-t.shape("turtle")
-t.speed(1)
-t.circle(100)
+# t = turtle.Turtle()
+# t.shape("turtle")
+# t.speed(1)
+# t.circle(100)
 
-turtle.done()
+# turtle.done()
 
 print("="*15)
 # fileni ulash
@@ -33,3 +34,18 @@ with open("material/message.txt", "r") as your_file:
     your_content = your_file.read()
     # wiht filechi ochib ishga tushgandan kegin o'zi close  yani yopib qoyadi
     print("your_content:",  your_content)
+
+print("===== PACKAGE MANAGER & EXTERNAL PACKAGE =====")
+''' PACKAGE MANAGERlar o'rnatish usullari
+     Python > pip, pipenv
+     NodeJS > npm, yarn
+     PHP > compores
+     MacOS > brew
+'''
+# EXTERNAL PACKAGE > link => https://pypi.org
+# PACKAGE MANAGER (PIP) pillow rasm chizishga yordam berodigon package o'rnatish mumkun
+
+with Image.open("material/logo.png") as img_obj:
+    resized_img = img_obj.resize((200, 200))
+    resized_img.show()
+    resized_img.save("material/sample.png")

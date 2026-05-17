@@ -49,3 +49,6 @@ with Image.open("material/logo.png") as img_obj:
     resized_img = img_obj.resize((200, 200))
     resized_img.show()
     resized_img.save("material/sample.png")
+# pip3 list pipni listni ko'rsatadi
+# pip3 show pillow desa qayerga ornatilganini bilsih uchun
+# cd dep shu linkgborsak /Users/ilyosbek96/Library/Python/3.9/lib/python/site-packages qanday saqlanganini ko'rsa bo'ladi va ls dep ro'yxatni ko'rsa bo'ladi

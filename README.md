@@ -39,3 +39,16 @@ git pull origin master
 # PROPERTY
 
 - method() xamda state
+
+## PIP commandalari:
+
+```
+windows pip | macOs pip3
+
+pip3 list
+pip3 install pillow
+pip3 uninstall pillow
+pip3 show pillow
+pip3 freeze > requirements.txt
+
+```

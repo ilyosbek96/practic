@@ -26,7 +26,11 @@ git pull origin master
 - Class deep dive
 - Operation & Conditions
 - Loops
-- ....
+- Tuple
+- List
+- Array
+- Compreension
+- Packages & Debugging
 
 ## PYTHONda xammanarsa OBJECT bo'ladi
 

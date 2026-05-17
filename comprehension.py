@@ -55,5 +55,3 @@ print("===== c) expression > for item in iterable <condition> =====")
 # c) expression > for item in iterable <condition>
 dict_people1 = {person[0]: person[1] for person in people if person[1] > 20}
 print("dict_people1:", dict_people1)
-
-#
